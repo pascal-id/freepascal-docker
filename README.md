@@ -10,9 +10,16 @@ Based on:
 USAGE:
 
 
+Linux/Mac
 ```
 docker run -it --rm --name fp -v "$PWD":/projects luri/free-pascal
 ```
+
+Windows
+```
+docker run -it --rm --name fp -v "%CD%":/projects luri/free-pascal
+```
+
 
 ![luri/free-pascal](docs/console.png)
 
