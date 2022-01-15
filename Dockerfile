@@ -2,8 +2,9 @@ FROM ubuntu:20.04
 
 SHELL ["/bin/bash", "-c"]
 
+ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq && \
-    apt-get install -y build-essential binutils wget
+    apt-get install -y build-essential binutils wget tzdata
 RUN mkdir -p /projects/
 WORKDIR /projects
 
