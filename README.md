@@ -6,6 +6,7 @@ Based on:
 
 - Ubuntu 20.04
 - [Free Pascal 3.2.2](https://www.freepascal.org/)
+- Apache +modcgi
 
 USAGE:
 
