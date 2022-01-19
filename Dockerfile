@@ -18,6 +18,10 @@ RUN a2enmod cgi \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
+# Make port 80 available to the world outside this container
+EXPOSE 80
+EXPOSE 443
+
 RUN mkdir -p /projects/
 WORKDIR /projects
 ADD ./app/ /app
